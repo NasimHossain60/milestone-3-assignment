@@ -22,10 +22,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="container">
+    <!-- Navbar Starts here -->
+    <header class="container position-sticky">
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand Brand-color" href="#">Navbar</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -86,7 +87,114 @@
         </div>
       </nav>
     </header>
-
+    <!-- Nambar Ends Here -->
+    <main>
+      <section>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="false"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active slider-img">
+              <img
+                src="images/cover/cover-1.png"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption captions">
+                <h2 class="fw-bold">
+                  Explore many different perspectives and learn.
+                </h2>
+                <p>
+                  We are truly living in a very unique time in the history of
+                  our civilization,
+                </p>
+                <div class="slider-button">
+                  <button class="btn btn-primary">Get Started</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item slider-img">
+              <img
+                src="images/cover/cover-2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption captions">
+                <h2 class="fw-bold">Ecovillage Design Education</h2>
+                <p>
+                  Ecovillage Design Education programmes, often referred to as
+                  ‘EDEs’,
+                </p>
+                <div class="slider-button">
+                  <button class="btn btn-primary">Get Started</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item slider-img">
+              <img
+                src="images/cover/cover-3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption captions">
+                <h2 class="fw-bold">
+                  Making a living while making a difference.
+                </h2>
+                <p>
+                  It can be difficult to make ends meet, let alone find a job
+                  that enlivens us and allows us to meaningfully.
+                </p>
+                <div class="slider-button">
+                  <button class="btn btn-primary">Get Started</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
     <!-- sript for Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
