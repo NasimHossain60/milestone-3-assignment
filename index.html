@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TRABN</title>
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/0b0bd52108.js" crossorigin="anonymous"></script>
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -69,7 +72,7 @@
                 <a class="nav-link active">Success</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active">Register</a>
+                <a class="nav-link active" >Register</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -412,8 +415,8 @@
       </section>
 
       <!-- Registration Section -->
-      <section class="container">
-        <div class="bg-primary p-5 rounded-5 text-center d-lg-flex align-items-center text-start ">
+      <section class="container my-5">
+        <div class="bg-primary p-5 rounded-5  d-lg-flex align-items-center text-start ">
           <div class="text-white ">
             <h1 class="fw-bold">Ready To Join</h1>
             <p>
@@ -422,11 +425,265 @@
             We’ll help you to identify and progress towards clearly defined career goals, whether you’re already employed or looking to start your career.
            </p>  
           </div>
-          <div>
-            <button class="btn btn-light text-primary" type="button">Registration</button>
-          </div>
+         <!-- Modal  -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary bg-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Registration
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Type Your Information</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <label for="email">Enter your email:</label><br>
+          <input type="email" id="email" name="email">
+          <br><br>
+          <form>
+            <label for="password">Enter your password:</label><br>
+            <input type="password" id="password" name="password">
+          </form>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
+        
       </section>
+
+      <!-- Successfull Students -->
+      <section class="container my-5">
+        <div class="text-center p-5">
+            <h2 class="fw-bold">Our Successfull Students</h2>
+            <p>Successful students know how to focus on their studies when it matters while also taking breaks when
+                <br>
+                they need them. They can manage their time wisely, stick to meaningful study schedules, and make the
+                <br>
+                most of their time in the classroom. In the process, successful students also know how to have a
+                <br>
+                good time, and love gaining knowledge as much as they enjoy getting stellar grades.
+            </p>
+        </div>
+        <div>
+            <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1 g-3">
+                <div>
+                    <div class="card">
+                        <img src="images/student/student-1.png" class="card-img-top p-3 rounded-5 shadow-lg" alt="student-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nasim Hossain</h5>
+                            <p class="card-text">Graphics designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <img src="images/student/student-2.png" class="card-img-top p-3 rounded-5 shadow-lg" alt="student-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Sharmin Hamid</h5>
+                            <p class="card-text"> Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <img src="images/student/student-3.png" class="card-img-top p-3 rounded-5 shadow-lg" alt="student-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Kamal Hossain</h5>
+                            <p class="card-text">Software engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="card">
+                        <img src="images/student/student-4.png" class="card-img-top p-3 rounded-5 shadow-lg" alt="student-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Rubaiya haq</h5>
+                            <p class="card-text">Java developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center my-5">
+            <button class="btn btn-primary custom-btn">See More</button>
+        </div>
+    </section>
+    <!-- Successfull Students section Ends Here -->
+
+    <!-- Students Feedback -->
+    <section class="container my-5">
+      <div class="text-center">
+        <h2>Some Students Feedback</h2>
+        <p>Here is some students of us who are telling the story of their journey from the beginning to the very
+            end <br>
+            Their journey of being professional their contributions and their sacrifices</p>
+    </div>
+    <div class="d-lg-flex">
+        <div class="border rounded m-3 p-4 position-relative">
+            <span id="badge"
+                class="position-absolute top-50 start-0 translate-middle text-center py-1 bg-info bg-opacity-10 border border-light rounded-circle">
+                <span class=""><i class="fa-solid fa-angle-left text-info fs-2"></i></span>
+            </span>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div><img src="images/comma.png" alt=""></div>
+                <div class="text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star text-warning text-opacity-50"></i>
+                </div>
+            </div>
+            <div>
+                <p>The Capstone project enables you to demonstrate multiple skills from the Certificate by solving an authentic real-world problems. This course will test your knowledge and
+                  understanding, and provide you with a platform to show off your new abilities in front-end web development using React. On completion of the Capstone project, you’ll
+                  have a job-ready portfolio that you can show to recruiters, demonstrate during interviews and impress potential future employers.
+                </p>
+            </div>
+            <div class="d-flex align-items-center">
+                <div>
+                    <img src="images/student/student-5.png" alt="">
+                </div>
+                <div class="ms-3">
+                    <p class="m-0 fw-bold">Ikramul Islam Ovie <br>
+                        <small class="fw-normal">Front-End Developer</small>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="border rounded m-3 p-4 position-relative">
+            <span id="badge"
+                class="position-absolute top-50 start-100 translate-middle text-center py-1 bg-info bg-opacity-75 border border-light rounded-circle">
+                <span class=""><i class="fa-solid fa-angle-right text-white fs-2"></i></span>
+            </span>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div><img src="images/comma.png" alt=""></div>
+                <div class="text-warning">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star text-warning text-opacity-50"></i>
+                </div>
+            </div>
+            <div>
+                <p>Evaluating the technical skills of a software engineer is a challenging task. You want to be sure that they’re doing their job right and are duly compensated, so they don’t feel undervalued. An effective way to do so is by utilizing a Software Engineer performance review template.
+
+                  A Software Engineer performance review template creates an avenue for managers to highlight areas where improvements and acquisition of new skills are necessary. It also helps managers set realistic goals that encourage productivity.
+            </div>
+            <div class="d-flex align-items-center">
+                <div>
+                    <img src="images/student/student-6.png" alt="">
+                </div>
+                <div class="ms-3">
+                    <p class="m-0 fw-bold">Nazifa Tushi <br>
+                        <small class="fw-normal">Software engineer</small>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Students Feedback Ends Here -->
+
+    <!-- Frequently Asked Questions Starts Here -->
+    <section class="container my-5">
+    
+      <div class="text-center">
+        <h2 class="fw-bold">Frequently Asked Questions</h2>
+        <p>In the long run you will face many of problems. <br>
+            there are some common issues most of the people asks for. So we are gonna answer some simple
+            questions.</p>
+    </div>
+    <div class="py-4">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is the difference between Flex and Grid?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was
+                        designed for layout in one dimension - either a row or a column. Grid was designed for
+                        two-dimensional layout - rows, and columns at the same time. The two specifications
+                        share some common features, however, and if you have already learned how to use flexbox,
+                        the similarities should help you get to grips with Grid.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What is the difference between Bootstrap and Tailwind?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Bootstrap comes with a set of pre-styled responsive, mobile-first components that
+                        possess a definite UI kit.Tailwind CSS uses a set of utility classes to create a neat UI
+                        with more flexibility and uniqueness. <br>
+                        Sites created using Bootstrap follow the generic pattern that makes them look identical.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What is CSS Box-model?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        In web development, the CSS box model refers to how HTML elements are modeled in browser
+                        engines and how the dimensions of those HTML elements are derived from CSS properties.
+                        It is a fundamental concept for the composition of HTML webpages.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What is HTML Semantic tags?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        A semantic element clearly describes its meaning to both the browser and the developer.
+
+                        Examples of non-semantic elements: div and span - Tells nothing about its content.
+
+                        Examples of semantic elements: form, table, and article - Clearly defines its content.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <!-- Frequently Asked Questions Ends Here -->
     </main>
 
     <!-- sript for Bootstrap -->
